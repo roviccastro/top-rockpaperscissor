@@ -29,11 +29,11 @@ function playRound(humanChoice, computerChoice){
   humanChoice === computerChoice 
   ? console.log(`It's a tie!`)
   : humanChoice === `rock` && computerChoice === `scissor`
-  ? console.log(`You win! Rock beats Scissor!`)
+  ? console.log(`You win! Rock beats Scissor! Score: ${humanScore += 1}`)
   : humanChoice === `paper` && computerChoice === `rock`
-  ? console.log(`You win! Paper beats Rock!`)
+  ? console.log(`You win! Paper beats Rock! Score: ${humanScore += 1}`)
   : humanChoice === `scissor` && computerChoice === `paper`
-  ? console.log(`You win! Scissor beats Paper!`)
+  ? console.log(`You win! Scissor beats Paper! Score: ${humanScore += 1}`)
   : console.log(`Error`);
 
 }
