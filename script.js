@@ -27,7 +27,7 @@ function playRound(humanChoice, computerChoice){
   humanChoice = getHumanChoice().toLowerCase();
 
   switch (humanChoice, computerChoice){
-    case `rock`, `rock`:
+    case `rock`, `rock` || `paper`, `paper` || `scissor`, `scissor`:
       console.log(`It's a tie!`)
       break;
   }
