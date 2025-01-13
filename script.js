@@ -34,8 +34,13 @@ function playRound(humanChoice, computerChoice){
   ? console.log(`You win! Paper beats Rock! Score: ${humanScore += 1}`)
   : humanChoice === `scissor` && computerChoice === `paper`
   ? console.log(`You win! Scissor beats Paper! Score: ${humanScore += 1}`)
+  : humanChoice === `rock` && computerChoice === `paper`
+  ? console.log(`You lose! Rock beats Scissor! Score: ${computerScore += 1}`)
+  : humanChoice === `paper` && computerChoice === `scissor`
+  ? console.log(`You lose! Paper beats Rock! Score: ${computerScore += 1}`)
+  : humanChoice === `scissor` && computerChoice === `rock`
+  ? console.log(`You lose! Scissor beats Paper! Score: ${computerScore += 1}`)
   : console.log(`Error`);
-
 }
 
 playRound(getHumanChoice(), getComputerChoice());
