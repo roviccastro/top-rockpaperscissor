@@ -1,6 +1,3 @@
-let humanScore = 0;
-let computerScore = 0;
-
 function getComputerChoice(){
 
   let randomNumber = Math.floor(Math.random() * 3);
@@ -43,4 +40,10 @@ function playRound(humanChoice, computerChoice){
   : console.log(`Error`);
 }
 
-playRound(getHumanChoice(), getComputerChoice());
+
+function playGame(){
+  let humanScore = 0;
+  let computerScore = 0;
+
+  playRound(getHumanChoice(), getComputerChoice());
+};
