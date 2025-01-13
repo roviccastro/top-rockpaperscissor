@@ -17,3 +17,7 @@ function getComputerChoice(){
 }
 
 console.log(getComputerChoice());
+
+function getHumanChoice(){
+  return window.prompt(`Rock, Paper, Shoe: `, `Paper`)
+}
