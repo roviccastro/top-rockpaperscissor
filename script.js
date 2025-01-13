@@ -11,7 +11,7 @@ function getComputerChoice(){
   } else if (randomNumber === 1){
     choice = `paper`;
   } else if (randomNumber === 2){
-    choice = `shoe`;
+    choice = `scissor`;
   } else {
     choice = `rock`;
   }
@@ -24,11 +24,18 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
-  humanChoice = getHumanChoice().toLowerCase();
+  humanChoice = humanChoice.toLowerCase();
 
-  switch (humanChoice, computerChoice){
-    case `rock`, `rock` || `paper`, `paper` || `scissor`, `scissor`:
-      console.log(`It's a tie!`)
-      break;
-  }
+  humanChoice === computerChoice 
+  ? console.log(`It's a tie!`)
+  : humanChoice === `rock` && computerChoice === `scissor`
+  ? console.log(`You win! Rock beats Scissor!`)
+  : humanChoice === `paper` && computerChoice === `rock`
+  ? console.log(`You win! Paper beats Rock!`)
+  : humanChoice === `scissor` && computerChoice === `paper`
+  ? console.log(`You win! Scissor beats Paper!`)
+  : console.log(`Error`);
+
 }
+
+playRound(getHumanChoice(), getComputerChoice());
