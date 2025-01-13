@@ -20,7 +20,7 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-  return window.prompt(`Rock, Paper, Shoe: `, `Paper`)
+  return window.prompt(`Rock, Paper, Scissor: `, `Paper`)
 }
 
 function playRound(humanChoice, computerChoice){
