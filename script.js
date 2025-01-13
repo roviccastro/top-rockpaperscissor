@@ -7,20 +7,28 @@ function getComputerChoice(){
 
   let choice 
   if (randomNumber === 0){
-    choice = `Rock`;
+    choice = `rock`;
   } else if (randomNumber === 1){
-    choice = `Paper`;
+    choice = `paper`;
   } else if (randomNumber === 2){
-    choice = `Shoe`;
+    choice = `shoe`;
   } else {
-    choice = `Rock`;
+    choice = `rock`;
   }
 
   return choice;
 }
 
-console.log(getComputerChoice());
-
 function getHumanChoice(){
   return window.prompt(`Rock, Paper, Shoe: `, `Paper`)
+}
+
+function playRound(humanChoice, computerChoice){
+  humanChoice = getHumanChoice().toLowerCase();
+
+  switch (humanChoice, computerChoice){
+    case `rock`, `rock`:
+      console.log(`It's a tie!`)
+      break;
+  }
 }
