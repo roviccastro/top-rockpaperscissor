@@ -1,4 +1,4 @@
-function getComputerChoice(){
+let getComputerChoice = () => {
 
   let randomNumber = Math.floor(Math.random() * 3);
 
@@ -16,7 +16,7 @@ function getComputerChoice(){
   return choice;
 }
 
-function getHumanChoice(){
+let getHumanChoice = () => {
   return window.prompt(`Rock, Paper, Scissor: `, `Paper`)
 }
 
@@ -29,6 +29,7 @@ function playGame(){
 
     humanChoice === computerChoice 
     ? console.log(`It's a tie!`)
+    
     : humanChoice === `rock` && computerChoice === `scissor`
     ? console.log(`You win! Rock beats Scissor! Score: ${humanScore += 1}`)
     : humanChoice === `paper` && computerChoice === `rock`
@@ -36,11 +37,13 @@ function playGame(){
     : humanChoice === `scissor` && computerChoice === `paper`
     ? console.log(`You win! Scissor beats Paper! Score: ${humanScore += 1}`)
     : humanChoice === `rock` && computerChoice === `paper`
+    
     ? console.log(`You lose! Rock beats Scissor! Computer Score: ${computerScore += 1}`)
     : humanChoice === `paper` && computerChoice === `scissor`
     ? console.log(`You lose! Paper beats Rock! Computer Score: ${computerScore += 1}`)
     : humanChoice === `scissor` && computerChoice === `rock`
     ? console.log(`You lose! Scissor beats Paper! Computer Score: ${computerScore += 1}`)
+    
     : console.log(`Error`);
   }
   
