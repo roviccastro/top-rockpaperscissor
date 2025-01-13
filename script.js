@@ -10,7 +10,7 @@ function getComputerChoice(){
   } else if (randomNumber === 2){
     choice = `Shoe`;
   } else {
-    chouce = `Rock`;
+    choice = `Rock`;
   }
 
   return choice;
