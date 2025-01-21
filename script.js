@@ -48,18 +48,6 @@ function playGame(){
 
   function playRound(humanChoice, computerChoice){  
 
-    if (humanScore >= 5){
-      displayResult(`You win! ${humanScore} points against ${computerScore} points!`);
-  
-      humanScore = 0;
-      computerScore = 0;
-    } else if (computerScore >= 5){
-      displayResult(`You lost! ${computerScore} points against ${humanScore} points!`);
-  
-      humanScore = 0;
-      computerScore = 0;
-    }
-
     if (humanChoice === computerChoice){
       displayResult(`It's a tie!`);
     } else if (humanChoice === 'rock' && computerChoice === 'scissor'){
@@ -78,6 +66,17 @@ function playGame(){
       displayResult(`-- Round Void --`);
     }
 
+    if (humanScore >= 5){
+      displayResult(`You win the game! ${humanScore} points against ${computerScore} points!`);
+  
+      humanScore = 0;
+      computerScore = 0;
+    } else if (computerScore >= 5){
+      displayResult(`You lose the game! ${computerScore} points against ${humanScore} points!`);
+  
+      humanScore = 0;
+      computerScore = 0;
+    }
   }
   
 };
