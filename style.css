@@ -18,10 +18,19 @@ body{
   display: flex;
   flex-flow: column wrap;
   gap: 10px;
+
+  background-color: lightcoral;
+  color: lightgoldenrodyellow;
 }
 
 #hero{
   display: flex;
   justify-content: center;
   flex: 1 0 auto;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: 75px;
 }
