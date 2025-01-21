@@ -16,9 +16,9 @@ let getComputerChoice = () => {
   return choice;
 }
 
-let getHumanChoice = () => {
-  return window.prompt(`Rock, Paper, Scissor: `, `Paper`)
-}
+// let getHumanChoice = () => {
+//   return window.prompt(`Rock, Paper, Scissor: `, `Paper`)
+// }
 
 function playGame(){
   let humanScore = 0;
@@ -28,7 +28,7 @@ function playGame(){
 
   function getPlayerChoice(e){
     humanChoice = e.target.id;
-    console.log(humanChoice);
+    playRound(humanChoice, getComputerChoice());
   }
 
   const rockSelected = document.getElementById('rock');
@@ -62,9 +62,6 @@ function playGame(){
     : console.log(`Error`);
   }
   
-  // for (let a = 0; a < 5; a++){
-  //   playRound(getHumanChoice(), getComputerChoice());
-  // }
 };
 
 playGame();
