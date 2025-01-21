@@ -24,10 +24,23 @@ function playGame(){
   let humanScore = 0;
   let computerScore = 0;
 
+  let humanChoice = '';
+
+  function getPlayerChoice(e){
+    humanChoice = e.target.id;
+    console.log(humanChoice);
+  }
+
+  const rockSelected = document.getElementById('rock');
+  rockSelected.addEventListener('click', getPlayerChoice);
+
+  const paperSelected = document.getElementById('paper');
+  paperSelected.addEventListener('click', getPlayerChoice);
+
+  const scissorSelected = document.getElementById('scissor');
+  scissorSelected.addEventListener('click', getPlayerChoice);
+
   function playRound(humanChoice, computerChoice){  
-    
-    
-    humanChoice = humanChoice.toLowerCase();
 
     humanChoice === computerChoice 
     ? console.log(`It's a tie!`)
