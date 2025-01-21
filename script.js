@@ -51,17 +51,17 @@ function playGame(){
     if (humanChoice === computerChoice){
       displayResult(`It's a tie!`);
     } else if (humanChoice === 'rock' && computerChoice === 'scissor'){
-      displayResult(`You win! Rock beats Scissor!`);
+      displayResult(`You win! Rock beats Scissor! Human Score: ${humanScore += 1} Computer Score: ${computerScore}`);
     } else if (humanChoice === 'paper' && computerChoice === 'rock'){
-      displayResult(`You win! Paper beats Rock!`);
+      displayResult(`You win! Paper beats Rock! Human Score: ${humanScore += 1} Computer Score: ${computerScore}`);
     } else if (humanChoice === 'scissor' && computerChoice === 'paper'){
-      displayResult(`You win! Scissor beats Paper!`);
+      displayResult(`You win! Scissor beats Paper! Human Score: ${humanScore += 1} Computer Score: ${computerScore}`);
     } else if (humanChoice === 'rock' && computerChoice === 'paper'){
-      displayResult(`You lose! Paper beats Rock!`);
+      displayResult(`You lose! Paper beats Rock! Human Score: ${humanScore} Computer Score: ${computerScore += 1}`);
     } else if (humanChoice === 'paper' && computerChoice === 'scissor'){
-      displayResult(`You lose! Scissor beats Paper!`);
+      displayResult(`You lose! Scissor beats Paper! Human Score: ${humanScore} Computer Score: ${computerScore += 1}`);
     } else if (humanChoice === 'scissor' && computerChoice === 'rock'){
-      displayResult(`You lose! Rock beats Scissor!`);
+      displayResult(`You lose! Rock beats Scissor! Human Score: ${humanScore} Computer Score: ${computerScore += 1}`);
     } else {
       displayResult(`-- Round Void --`);
     }
