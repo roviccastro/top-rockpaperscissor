@@ -23,6 +23,17 @@ body{
   color: lightgoldenrodyellow;
 }
 
+#main-container{
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto auto;
+
+  flex: 1 1 auto;
+
+  width: 500px;
+  height: 500px;
+}
+
 #hero{
   display: flex;
   justify-content: center;
@@ -43,5 +54,15 @@ button{
 
   color: lightcoral;
   font-weight: bolder;
+  font-size: 16px;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+}
+.result > p{
+  display: flex;
+  font-style: italic;
   font-size: 16px;
 }
