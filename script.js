@@ -16,10 +16,6 @@ let getComputerChoice = () => {
   return choice;
 }
 
-// let getHumanChoice = () => {
-//   return window.prompt(`Rock, Paper, Scissor: `, `Paper`)
-// }
-
 function playGame(){
   let humanScore = 0;
   let computerScore = 0;
