@@ -47,9 +47,9 @@ function playGame(){
     : console.log(`Error`);
   }
   
-  for (let a = 0; a < 5; a++){
-    playRound(getHumanChoice(), getComputerChoice());
-  }
+  // for (let a = 0; a < 5; a++){
+  //   playRound(getHumanChoice(), getComputerChoice());
+  // }
 };
 
 playGame();
