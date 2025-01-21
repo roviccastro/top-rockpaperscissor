@@ -20,6 +20,8 @@ function displayResult(msg){
   const resultContainer = document.getElementsByClassName("result.container");
 }
 
+
+
 function playGame(){
   let humanScore = 0;
   let computerScore = 0;
@@ -42,7 +44,23 @@ function playGame(){
 
   function playRound(humanChoice, computerChoice){  
 
-    
+    if (humanChoice === computerChoice){
+      console.log(`It's a tie!`);
+    } else if (humanChoice === 'rock' && computerChoice === 'scissor'){
+
+    } else if (humanChoice === 'paper' && computerChoice === 'rock'){
+      
+    } else if (humanChoice === 'scissor' && computerChoice === 'paper'){
+      
+    } else if (humanChoice === 'rock' && computerChoice === 'paper'){
+      
+    } else if (humanChoice === 'paper' && computerChoice === 'scissor'){
+      
+    } else if (humanChoice === 'scissor' && computerChoice === 'rock'){
+      
+    } else {
+
+    }
 
   }
   
