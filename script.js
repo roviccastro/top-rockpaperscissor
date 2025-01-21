@@ -18,7 +18,7 @@ let getComputerChoice = () => {
 }
 
 function displayResult(msg){
-  const resultContainer = document.getElementsByClassName("result.container");
+  const resultContainer = document.getElementsByClassName("result");
   const resultText = document.querySelector(".result-text");
 
   resultText.textContent = msg;

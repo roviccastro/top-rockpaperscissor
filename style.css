@@ -8,6 +8,8 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
+
+  border: 1px solid red;
 }
 
 /*  */
@@ -15,41 +17,6 @@
 body{
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-
-  color: lightgoldenrodyellow;
-  background-color: lightcoral;
+  gap: 10px;
 }
 
-#hero,
-.button-container,
-button,
-.result.container{
-  display: flex;
-}
-
-.button-container{
-  justify-content: center;
-  gap: 30px;
-}
-
-button{
-  font-size: large;
-  font-weight: bolder;
-  color: lightcoral;
-
-  justify-content: center;
-
-  border: 0px none black;
-  border-radius: 40px;
-  padding: 15px 30px;
-}
-
-.result.container{
-  justify-content: center;
-}
-.result.container > p {
-  font-style: italic;
-  font-size: 20px;
-  color: whitesmoke;
-}
